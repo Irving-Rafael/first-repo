@@ -1,7 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
-    printf("Hola mundo\n");
 
+    char nombre[100];
+
+    printf("Hola mundo\n");
+    printf("Nombre: \n");
+    fgets(nombre, sizeof(nombre), stdin);
+    printf("Hola %s", nombre);
+    
     return 0;
 }
